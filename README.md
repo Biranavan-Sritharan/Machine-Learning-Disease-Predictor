@@ -36,6 +36,19 @@ Now we can begin installing the python libraries required, which is just one, an
 ```console
 pip install pandas
 ```
+Also worth noting if you are facing errors due to Execution Policy on your machine when trying to set up your virtual machine, then the following can be helpful (since this error occurred to me).
+Open Windows PowerShell and you can check your execution policy with:
+
+```console
+Get-ExecutionPolicy -List
+```
+
+If localMachine or currentUser is set to undefined or restricted then switching them to RemoteSigned or ByPass will help fix this error. Note, this does open your machine to security risks so best to reset this back to normal when you are done. To change the value of execution policy:
+
+```console
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+You can switch out RemoteSigned with ByPass or other policies and the scope can be changed to localMachine if needed.
 
 ### For JavaScript programs:
 This is much simpler, some JavaScript programs require the json2csv and csv2json packages and to install this type the following into the terminal in your code editor:
