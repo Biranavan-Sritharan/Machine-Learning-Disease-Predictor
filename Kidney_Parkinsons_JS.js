@@ -37,16 +37,16 @@ function foo2(disease_type) {
   
     
   //basically gets final values and mults by 100 to give percentage and also rounded to 2dp and then converted to a string so that a % sign can be appended onto it
-  document.getElementById("ooutput").innerText = ((finalResultPercentage ).toFixed(2)).toString() + "%";
-  document.getElementById("age_pred").innerText = (( ageGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("gender_pred").innerText = (( genderGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("ethnicity_pred").innerText = (( ethnicityGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("bmi_pred").innerText = (( BMIGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("smoking_pred").innerText = (( smokingGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("family_pred").innerText = ((familyGivenThatDisease ).toFixed(5)).toString() + "%";
-  document.getElementById("alcohol_pred").innerText = (( alcoholGivenThatDisease).toFixed(5)).toString() + "%";
-  document.getElementById("physical_pred").innerText = (( physicalGivenThatDisease).toFixed(5)).toString() + "%";
-  console.log("this here means its done somrith idk: " +ageGivenThatDisease);
+  document.getElementById("ooutput").innerText = ((finalResultPercentage).toFixed(2)).toString() + "%";
+  document.getElementById("age_pred").innerText = (( ageGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("gender_pred").innerText = (( genderGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("ethnicity_pred").innerText = (( ethnicityGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("bmi_pred").innerText = (( BMIGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("smoking_pred").innerText = (( smokingGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("family_pred").innerText = ((familyGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("alcohol_pred").innerText = (( alcoholGivenThatDisease *100).toFixed(5)).toString() + "%";
+  document.getElementById("physical_pred").innerText = (( physicalGivenThatDisease *100).toFixed(5)).toString() + "%";
+  console.log("var check: " +ageGivenThatDisease);
 }
 
 
