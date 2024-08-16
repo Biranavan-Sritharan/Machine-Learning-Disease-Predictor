@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title> connection </title>
+
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+        <py-env>
+            - pandas
+        </py-env>
+        
+    </head>
+
+    <body>
+
+        <py-script src = 'proj test run.py'>  
+
+        </py-script>
+        
+        <p> text from html</p>
+
+
+        <!-- ok  form seems to be working and using python as well-->>
+
+        <form pys-onClick = "sub" onsubmit="return false"> 
+            <label for = "name"> Name: </label><br>
+            <input type = "text" id = "name" name = "name" value = "bob"><br>
+
+            <select name = "countries" id = "countries">
+                    <option value = "uk">uk</option>
+                    <option value = "usa">usa</option>
+                    <option value = "uae">uae</option>
+            </select>
+
+            <input type = "submit" id = "btn-form" value = "submit">
+
+        </form>
+
+        <p>output</p>
+        <p id = "output">  </p>
+
+
+
+    </body>
+
+</html>
