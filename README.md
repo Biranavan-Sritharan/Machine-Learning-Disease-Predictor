@@ -36,7 +36,7 @@ Now we can begin installing the python libraries required, which is just one, an
 ```console
 pip install pandas
 ```
-Also worth noting if you are facing errors due to Execution Policy on your machine when trying to set up your virtual machine, then the following can be helpful (since this error occurred to me).
+Also worth noting if you are facing errors due to Execution Policy on your machine when trying to set up your virtual environment, then the following can be helpful (since this error occurred to me).
 Open Windows PowerShell and you can check your execution policy with:
 
 ```console
