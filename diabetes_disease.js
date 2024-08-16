@@ -66,7 +66,7 @@ if url_selctor == 1 {
 */
 
 //github url from repository for diabetes
-let url = 'https://raw.githubusercontent.com/Biranavan-Sritharan/Disease-Prediction-Webpage/main/diabetes.csv';
+let url = 'https://raw.githubusercontent.com/Biranavan-Sritharan/Biranavan-Sritharan.github.io/main/diabetes.csv';
 
 // this function bascially formats csv
 function parseCSV (csv) {
