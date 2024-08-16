@@ -6,7 +6,7 @@ A disease prediction webpage using machine learning to calculate probabilities u
 PLEASE NOTE, using the online github repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side under the about section or copying and pasting the link below into your web browser:
 
 
-[Biranavan-Sritharan.github.io](https://biranavan-sritharan.github.io/)
+[click here!](https://biranavan-sritharan.github.io/)
 
 
 And also this reduces the risk of running into any potential errors when setting up the files in your own code editor (which there should not be any problems). Also please view the webpage at an 80% zoom level for best experience and to avoid any graphical issues*
