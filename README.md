@@ -19,7 +19,9 @@ Also if you are planning on running any of the unused files, note they will not 
 
 Set up a virtual environment using the command in the terminal (preferably in your code editor that is running the program):
 
+```console
 python -m venv venv
+```
 
 This will create a venv folder to appear in your program folder, from here run this line in the terminal:
 
