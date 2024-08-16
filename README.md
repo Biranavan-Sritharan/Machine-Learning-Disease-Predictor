@@ -3,7 +3,7 @@
 ## Summary
 A disease prediction webpage using machine learning to calculate probabilities using Naive Bayes.
 
-PLEASE NOTE, using the online github repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side or [clicking here!](Biranavan-Sritharan.github.io/)
+PLEASE NOTE, using the online github repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side or [clicking here!](youtube.com)
 
 And also this reduces the risk of running into any potential errors when setting up the files in your own code editor (which there should not be any problems). Also please view the webpage at an 80% zoom level for best experience and to avoid any graphical issues*
 
@@ -54,7 +54,7 @@ Overall the website is very simple and easy to use and there should not be any d
 
 For optimal experience, zoom out to 80%. The main webpage (index.html) has 4 main sections (these can be navigated to with ease using the navigation bar at the top): Disease Predictor links, Guide, Github Redirect and Extra Information. The Guide contains basic information that is worth reading quickly, the github logo will re-direct you back to the repository, extra information will contain more information that may answer any questions you may have with the webpage and its use. And finally there is the disease predictor links, three in total: one for diabetes, another for chronic kidney disease and the last one for parkinsons. When you click on these links it will take you to another webpage, you can enter your information into the webpage into the labelled input boxes and once submit is clicked it will provide you with the probablity of this disease occuring. The final result will appear in a red/blue glow and then there will be a list of more values, each which shows the contributions to the the final probablity value, and you can see what might be the cause of such a high or low final output. To re-direct youself back to the homepage then click on the Home button beneath the title of the predictor.
 
-## Ethical Concerns
+## Ethical Concerns:
 Now please note that this predictor is not a replacement for a doctor and if you really are concerned then please consult a medical proffesional. This predictor is only as good as the datasets used which have been sourced from public domain sources. 
 
 
