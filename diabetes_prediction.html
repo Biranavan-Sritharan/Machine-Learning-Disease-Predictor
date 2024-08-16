@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS attempt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- <script data-main="scripts/main.js" src="scripts/require.js"></script> --> <!-- REMOVE THIS LINE LATER, REQUIRE JS LIBRARY THINGY-->
+
+    <!-- Title Box made here with home link below -->
+    <div class = "Diabetes-Title">  <!--Would have actually been better to make this the square instead of declaring a square within this div in hindsight-->
+
+        
+
+        <h1> DIABETES PREDICTOR </h1>
+        <div class = "diabetes-square">  </div>
+
+        
+
+    </div>
+
+    <a href = "/index.html" class = "home-link"> Home </a>
+    
+
+    <!-- Form here and submit button below, button doesnt work when within form for some reason -->
+    <div class = "form-style">
+
+        <form id = "form1">
+
+            <div class = "row1">
+
+                <label for = "age">Age:</label> <br>
+                <input type = number id = "age" name = "age" min = "0"> <br><br>
+
+                <label for = "pregnancies"> Number of Pregnancies: </label> <br>
+                <input type = number id = "pregnancies" name = "pregnancies" min = "0"> <br><br>
+
+                <label for = "glucose"> Glucose Level: </label> <br>
+                <input type = number id = "glucose" name = "glucose" min = "0"> <br><br>
+
+            </div>
+
+            <div class = "row2">
+
+                <label for = "blood-pressure"> Blood Pressure: </label> <br>
+                <input type = number id = "blood-pressure" name = "blood-pressure" min = "0"> <br><br>
+
+                <label for = "skin-thickness"> Skin Thickness: </label> <br>
+                <input type = number id = "skin-thickness" name = "skin-thickness" min = "0"> <br><br>
+
+                <label for = "insulin"> Insulin Level: </label> <br>
+                <input type = number id = "insulin" name = "insulin" min = "0"> <br><br>
+            
+            </div>
+
+            <div class = "row3">
+
+                <label for = "bmi"> BMI: </label> <br>
+                <input type = number id = "bmi" name = "bmi" min = "0"> <br><br>
+
+                <label for = "pedigree"> Diabetes Pedigree Function: </label> <br>
+                <input type = number id = "pedigree" name = "pedigree" min = "0"> <br><br>
+            
+            </div>
+
+            <div class = "form-square">  </div>
+
+        </form>
+
+    </div>
+    
+    <button onclick = "foo()" id = "submit">Submit</button>
+
+    <!-- Output from JS displayed here -->
+    <div class = "Output">
+        <h1 class = "center_output"> ----- Outputs ----- </h1>
+
+        <h2 class = "output-text-center"> --- Chance of diabetes occcuring --- </h2>
+        <h2> <p id = "output"></p> </h2>
+        
+
+        <h2 class = "center_output"> ----- Sources of contributions to diabetes ----- </h2>
+        <h3> Age: <p id = "age_output">  </p> </h3>
+        <h3> Pregnancies: <p id = "preg_output">  </p> </h3>
+        <h3> Glucose: <p id = "glucose_output">  </p> </h3>
+        <h3> Blood Pressure: <p id = "bp_output">  </p> </h3>
+        <h3> Skin Thickness: <p id = "st_output">  </p> </h3>
+        <h3> Insulin: <p id = "insulin_output">  </p> </h3>
+        <h3> BMI: <p id = "bmi_output">  </p> </h3>
+        <h3> Diabetes Pedigree Function: <p id = "pedigree_output">  </p> </h3>
+    </div>
+
+    <script src = "diabetes_disease.js"> </script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinsons Predictor</title>
+    <link rel="stylesheet" href="style.css">  
+
+</head>
+
+
+<body>
+    <script src = "Kidney_Parkinsons_JS.js"> </script>
+
+    <div class = "maintitle-square">  
+
+        <h1 class = "pred-title"> Parkinsons Predictor </h1>
+        <a class = "pred-home" href = "/index.html">Home</a>
+
+    </div>
+
+    <form class = "form-pred">
+
+        <label for = "age" class = "label-pred"> Age: </label>
+        <select name = "age" id = "age">
+            <option value = "65"> 50-65 </option>
+            <option value = "75"> 66-75 </option>
+            <option value = "85"> 76-85 </option>
+            <option value = "90"> 86+ </option>
+        </select> <br><br>
+
+        <label for = "gender" class = "label-pred"> Gender: </label>
+        <select name = "gender" id = "gender">
+            <option value = "male"> Male </option>
+            <option value = "female"> Female </option>
+        </select> <br><br>
+
+        <label for = "ethnicity" class = "label-pred"> Ethnicity: </label>
+        <select name = "ethnicity" id = "ethnicity">
+            <option value = "0"> Caucasian </option>
+            <option value = "1"> African American </option>
+            <option value = "2"> Asian </option>
+            <option value = "3"> Other </option>
+        </select> <br><br>
+
+        <label for = "bmi" class = "label-pred"> BMI: </label>
+        <select name = "bmi" id = "bmi">
+            <option value = "15"> 0-15 </option>
+            <option value = "25"> 16-25 </option>
+            <option value = "35"> 26-35 </option>
+            <option value = "36"> 36+ </option>
+        </select> <br><br>
+
+        <label for = "smoking" class = "label-pred"> Smoking: </label>
+        <select name = "smoking" id = "smoking"">
+            <option value = "1"> Yes </option>
+            <option value = "0"> No </option>
+        </select> <br><br>
+
+        <label for = "family" class = "label-pred"> Family history: </label>
+        <select name = "family" id = "family">
+            <option value = "1"> Yes </option>
+            <option value = "0"> No </option>
+        </select> <br><br>
+
+        <label for = "alcohol" class = "label-pred"> Alcohol consumption: </label>
+        <select name = "alcohol" id = "alcohol">
+            <option value = "6"> Low </option>
+            <option value = "13"> Medium </option>
+            <option value = "20"> High </option>
+        </select> <br><br>
+
+        <label for = "physical" class = "label-pred"> Physical Activity: </label>
+        <select name = "physical" id = "physical">
+            <option value = "3"> Low </option>
+            <option value = "6"> Medium </option>
+            <option value = "10"> High </option>
+        </select>  <br><br>
+
+        <label for = "stroke"> Stroke: </label>
+        <select name = "stroke" id = "stroke">
+            <option value = "1"> Yes </option>
+            <option value = "0"> No </option>
+        </select> <br><br>
+
+    
+    </form>
+    
+    <button onclick = "foo2(1)" id = "submitt">Submit</button>
+    
+    <div class = "output-div">
+
+        <h2 class = "pred-output"> ----- Outputs ----- </h2>
+        <h2 class = "pred-output_title"> ---- Chance of Parkinsons Occcuring ---- </h2>
+        <p id = "ooutput"></p>
+
+        <h2 class = "pred-source"> ----- Sources of contributions to Parkinsons ----- </h2>
+
+        <h3> Age: <span id="age_pred"></span> </h3>
+        <h3> Gender: <span id="gender_pred"></span> </h3>
+        <h3> Ethnicity: <span id="ethnicity_pred"></span> </h3>
+        <h3> BMI: <span id="bmi_pred"></span> </h3>
+        <h3> Smoking: <span id="smoking_pred"></span> </h3>
+        <h3> Family History: <span id="family_pred"></span> </h3>
+        <h3> Alcohol Consumption: <span id="alcohol_pred"></span> </h3>
+        <h3> Physical Activity: <span id="physical_pred"></span> </h3>
+
+
+    </div>
+    
+    
+</body>
+</html>
