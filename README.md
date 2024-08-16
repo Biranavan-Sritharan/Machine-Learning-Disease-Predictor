@@ -3,7 +3,7 @@ A disease prediction webpage using machine learning to calculate probabilities u
 
 PLEASE NOTE, using the online github repository rather than the zip file will give the most up to date version and reduces the risk of running into any potential errors when setting up the files in your own code editor (which there should not be any problems). Also please view the webpage at an 80% zoom level for best experience and to avoid any graphical issues*
 
-Requirements:
+##Requirements:
 
 An internet connection is required to run this webpage since the program fetches the datasets from the github repository directly and not locally!
 If you decide to view this in your code editor, please install a way to host a live server from your machine. 
