@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Disease Predictor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Elements for taskbar and title headings -->
+
+    <div class = "container">
+
+        <nav>
+
+            <ul class = "nav-taskbar">
+                <li> <a href = "#Guide-jump"> Guide </a> </li>
+                <li> <a href = "#portal-jump"> Disease Predictor </a> </li>
+                <li> <a href = "#github-jump"> GitHub </a> </li>
+                <li> <a href = "#extra-jump"> Extra Information </a> </li>
+            </ul>
+        
+        </nav>
+
+        <div class = "title">
+            <h2> Welcome to </h2>
+            <h1> DISEASE PREDICTOR </h1>
+        </div>
+        
+        <div class = "title-background"> </div>
+        <div class = "taskbar-background"> </div>
+
+    </div>
+
+    <!-- Links to the disease predictors -->
+
+    <div class = "portal" id = "portal-jump">
+
+            <div class = "square-1"> <a href = "/html_page.html"> Diabetes Prediction </a> </div> 
+            <div class = "square-2"> <a href = "\chronic_kidney.html">Chronic Kidney Disease Prediction </a> </div> 
+            <div class = "square-3"> <a href = "/parkinsons_prediction.html">Parkinsons Prediction </a> </div>      
+
+    </div>
+
+    <!-- Compromises of Guide Elements -->
+
+    <div class = "Guide" id = "Guide-jump"> 
+        <h1> Guide </h1>
+        <div class = "square-Guide"> 
+            <p> 
+                To begin select one of the options above to test the likelihood of you getting this disease. There are 3 options to choose from and once you enter your 
+                details into the corresponding fields, you will get a results that will be displayed below and will appear in a blue-red 'glow' so its easy to spot!
+                Along with the probability of getting one of the listed disease, the software will also tell you the source of which input field is causing the greatest
+                influence to your final result. Also it is recommended to view the webpage at a zoom value of 80%, or if you are experiencing any graphical problems. <br><br>
+                
+                If you have any questions or wondering about the result obtained, answers can be found in either the Extra Information Section of this webpage or the GitHub
+                repository where the most in-depth reasoning and report of this project will be displayed.
+            </p> 
+        </div>
+    </div>
+
+    <!-- Compromises of GitHub Elements -->
+
+    <div class = "github">
+
+        <h1> github </h1> <!-- <span class = "line2"> ____________ </span> -->
+
+    </div>
+
+    <div class = "github-2" id = "github-jump">
+
+        <div>
+            <a href = "https://github.com/Biranavan-Sritharan/Disease-Prediction-Webpage"> <img src = "github_icon.png"> </a>
+        </div>
+
+        <hr class = "line-github">
+        <div class = "github-circle1">  </div>
+        <div class = "github-square1"> <p> Check the github repository to see the datasets used to make the predictions, and how the Javascript code fetches this straight from the repository itself! </p> </div>
+
+        <div class = "github-circle2">  </div>
+        <div class = "github-square2"> <p> Check for any requirements you might need to see the webpage at its best performance, everything will be explained in further detail on the github repository alongside a report of the functionalties of this webpage in greater detail. </p> </div>
+
+        <div class = "github-circle3">  </div>
+        <div class = "github-square3"> <p> But your questions may be answered in the section below or above (Guide and Extra Information), you can use the taskbar to help navigate to it! However if it is not answered there, then it would be best to check my github repository :) </p> </div>
+
+    </div>
+
+    <p class = "github-shortline"> Hover over the circles on the github logo to reveal some questions you may have, and click the github logo to go to the repository </p>
+
+    <!-- Compromises of Extra Info Elements -->
+
+    <div class = "Extra" id = "extra-jump">
+
+        <h1> Extra Information </h1>
+        <div class = "Extra-square"> 
+            <p>
+                Some questions you may be asking, especially ones in regards to the accuracy of the probabilities calculated by the software.
+                The way these probabilities are calculated is the use of datasets that have been sourced from the web. The website that these datasets
+                are mostly from Kaggle.com where lots of public domain datasets are available to use. The accuracy of the probabilities given to you is
+                heavily reliant on the accuracy of the datasets itself. So, if you are seeing something unusual, it is likely due to the nature of the dataset
+                and not the calculation itself. The calculation performed to provide you with your probability value is Naïve Bayes. This method is a good way
+                of calculating probabilities and uses machine learning to use the provided data to calculate the probability. The dataset is read and calculations are
+                performed in JavaScript. There are no libraries/packages or API's used in this webpage so nothing needs to be installed if you were to run this webpage
+                on your own machine. However previously in a different iteration of this webpage the csv2json and json2csv packages were used, but not anymore
+                so if any association with this can be disregarded if seen. More Information available on the GitHub repository along with any requirements and anything to keep
+                note of when running this webpage.
+            </p> 
+        </div>
+
+    </div>  
+    
+</body>
+</html>
