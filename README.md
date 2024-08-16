@@ -27,17 +27,23 @@ python -m venv venv
 
 This will create a venv folder to appear in your program folder, from here run this line in the terminal:
 
+```console
 venv/Scripts/activate
+```
 
 Now we can begin installing the python libraries required, which is just one, and the way to install this is to type again into the terminal this line:
 
+```console
 pip install pandas
+```
 
 ### For javascript programs:
 This is much simpler, some javascript programs require the json2csv and csv2json packages and to install this type the following into the terminal in your code editor:
 
+```console
 npm install csv2json
 npm install json2csv
+```
 
 But please note that these venv set ups or npm package installations is for unused or discarded programs, the actual final project does not have any pre-requisites.
 
