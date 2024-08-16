@@ -7,6 +7,9 @@ PLEASE NOTE, using the online GitHub repository rather than the zip file will gi
 
 And also this reduces the risk of running into any potential errors when setting up the files in your own code editor (which there should not be any problems). Also please view the webpage at an 80% zoom level for best experience and to avoid any graphical issues*
 
+## Progression demonstrated in webpage (IMPORTANT!)
+There are some details in the webpage and JavaScript code that have been intentionally left in such as the diabetes predictor taking number input rather than ranges (or cluster values) or in the JS code it can be seen that when a value has a value of 0 there are 2 methods it has been given the value of 1. One which uses an if statement and another using || operator looking for a falsy value. Things like this are left in to show progress and improvement as the webpage was designed. Some of these are mentioned with comments in the code to make it easier to spot these situations!
+
 ## Requirements:
 
 An internet connection is required to run this webpage since the program fetches the datasets from the GitHub repository directly and not locally!
