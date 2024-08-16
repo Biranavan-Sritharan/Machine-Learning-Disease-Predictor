@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*add websafe fallback fonts later*/
+
+/* div border checks
+
+div {
+    border: 2px solid red;
+}
+*/
+
+body {
+    background-color: #c0eeff; /*#c0eeff*/
+    max-width: 4500px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/*
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+*/
+
+html {
+    scroll-behavior: smooth;  /*adds the smooth scrolling animation but above is the motion sickness prevention function which curretnly isn't wokring properly*/
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* Main Title */
+
+.title {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+
+    color: #c1e5f5;
+    font-family: 'franklin gothic heavy' , 'sans-serif';
+    font-size: 90px;
+    white-space: nowrap;
+}
+
+.title h2 {
+    font-size: 30px;
+    font-family: 'Lato' , 'sans-serif';
+    font-weight: normal;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 0px;
+    padding: 7rem 0px 0px 0px;
+}
+
+.title h1 {
+    /* color: #ecfaff; */
+    margin: -45px;
+    padding: 0px 0px 100px 0px;
+}
+
+/* Taskbar */
+
+nav {
+    max-width: 100%;
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 25px;
+    margin: auto;
+    padding: 1px 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-taskbar {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+
+    position: fixed;
+    top: 0;
+    z-index: 999910;  /*little big where the github-circles clip the nav bar :/ */
+}
+
+.taskbar-background {
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #83cbeb;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-taskbar li {
+    /*flex: 1; */
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+.nav-taskbar li a {
+    color: #c1e5f5; /* change this to a lighter blue */
+    display: block; /* what is this */
+    margin: 1rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-taskbar li a:hover {
+    color: #ffffff;   
+}
+
+/* Title Background */
+
+.title-background {
+    max-width:100%;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: #83cbeb;
+    background-attachment: fixed;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Disease Prediction Links/Portals */
+
+.portal {
+    display: flex;
+    flex-wrap: wrap;  /*stop squares being squished with window size*/
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+}
+
+.square-1, .square-2, .square-3 {
+    height: 350px;
+    width: 350px;
+    background-color: #83cbeb;
+    display: flex;
+    flex-direction: row;
+
+
+    padding: 0px;
+    margin: 140px 25px 25px 25px;
+}
+
+.square-1 a, .square-2 a, .square-3 a { 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #c1e5f5;
+    font-family: 'Lato' , 'sans serif';
+    font-size: 35px;
+    transition: color 0.7s;
+}
+
+.square-1 a:hover, .square-2 a:hover, .square-3 a:hover { 
+    color: #ffffff;
+    transition-timing-function: ease-in-out;
+}
+
+/* Guide Box */
+
+.Guide h1 {
+    color:#83cbeb;
+    font-family: 'Lato' , sans-serif;
+    font-size: 140px;
+
+    margin: 1.5rem 0px -80px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.square-Guide {
+    width: 1750px;
+    height: 500px;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 3rem 5rem 3.5rem 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83cbeb;
+}
+
+.Guide p {
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 35px;
+    padding: 0px 25px 0px 50px;
+
+    color: #c0eeff;
+}
+
+/* GitHub Link */
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.github h1 {
+    font-family: 'Lato', 'sans serif';
+    font-size: 140px;
+    color: #83cbeb;
+    margin: 0;
+    /**/
+}
+
+.line1 { /*at the moment this does nothing*/
+    padding: 5px 5px 5px 50px;
+    margin: -25px 5px 5px 5px;
+}
+
+.line2 { /*at the moment this does nothing*/
+    padding: 5px 5px 5px 5px;
+    margin: -25px 5px 5px 5px;
+}
+
+
+
+
+.github-2 { /*made because annoying bug in github div with regards to center title*/
+    position: relative;
+}
+
+.github-2 img {
+    width: 500px;
+    height: 500px;
+    margin: 5rem 0rem 0rem 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    
+}
+
+.github-p {
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 20px;
+    color: #83cbeb;
+    
+}
+
+.github-2 p {
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 20px;
+    color: #c0eeff;
+    text-align: justify;
+    padding: 5px 5px 5px 5px;
+    
+}
+
+/* GitHub Show/Hidden Elements (probably can make this mroe efficent and put into one fucntion but thats for a later date)*/
+
+.github-2 .github-circle3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83cbeb;
+    border: 5px solid #c1e5f5;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(130%, 630%);
+    z-index: 0;
+    position: absolute;
+}
+
+.github-2 .github-circle3:hover + .github-square3 {
+    background-color: #83cbeb;
+    opacity: 1;
+    display: block;
+}
+
+.github-2 .github-square3 {
+    width: 450px;
+    height: 150px;
+    /*display: none;*/
+    background-color: #83cbeb;
+    opacity: 0;
+    transition: opacity 2s;
+    position: absolute;
+
+    transform: translate(270%, -100%);
+}
+
+.github-2 .github-circle2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83cbeb;
+    border: 5px solid #c1e5f5;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-550%, 267%);
+    z-index: 0;
+    position: absolute;
+}
+
+.github-2 .github-circle2:hover + .github-square2 {
+    background-color: #83cbeb;
+    opacity: 1;
+    display: block;
+}
+
+.github-2 .github-square2 {
+    width: 450px;
+    height: 150px;
+    background-color: #83cbeb;
+    opacity: 0;
+    transition: opacity 2s;
+    /*display: none;*/
+    position: absolute;
+
+    transform: translate(40%, -120%);
+}
+
+.github-2 .github-circle1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #83cbeb;
+    border: 5px solid #c1e5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(325%, -450%);
+    z-index: 0;
+    position: absolute;
+}
+
+.github-2 .github-circle1:hover + .github-square1{
+    background-color: #83cbeb;
+    opacity: 1;
+    display: block;
+}
+
+.github-2 .github-circle1:hover + .line-github { /*come back to this later*/
+    position: absolute;
+    display: block; 
+}
+
+.github-2 .github-square1 {
+    width: 450px;
+    height: 150px;
+    background-color: #83cbeb;
+    opacity: 0;
+    transition: opacity 2s;
+    /*display: none; This is old code that was used to hide the textbox before the animation was added*/
+    position: absolute;
+
+    transform: translate(280%, -350%);
+}
+
+.github-2 .line-github { /*come back to this later*/
+  border: none;
+  border-top: 5px dotted #83cbeb;
+  color: #ff000000;
+  background-color: #ffffff00;
+  height: 1px;
+  width: 500px;
+  transform: translate(900px,-400px);
+  position: absolute;
+  display: none;
+}
+
+.github-shortline {
+    color:#83cbeb;
+    font-family: 'Lato';
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Extra Information Section */
+
+.Extra h1 {
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 140px;
+
+    color:#83cbeb;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0rem 0rem -32px 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.Extra-square {
+    width: 100%;
+    height: 250px;
+    background-color: #83cbeb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.Extra p {
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 25px;
+    text-align: justify;
+    color: #c0eeff;
+
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+
+/* DIABETES WEBPAGE STYLING */
+
+.form-style {
+    height: 250px;
+    margin: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+label {
+    margin: 0px 10px 10px 0px;
+    font-family: 'Lato', 'sans-serif';
+    color:#c0eeff;
+    text-align: center;
+}
+
+input[type=number] {
+    background-color: #83cbeb;
+    width: 200px;
+    height: 30px;
+    margin: 0px 50px 10px 10px;
+    border-radius: 5px;
+    border: 2px #c1e5f5 solid;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    color:#c0eeff;
+    font-size: 20px;
+}
+
+.form-style .row1, .form-style .row2, .form-style .row3 {
+    width: 100%;
+    margin: 0px 50px 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    height: 250px;
+    background-color: #83cbeb;
+    z-index: -1; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    white-space: nowrap;
+}
+
+
+.Output {
+    font-family: 'Lato' , 'sans-serif';
+    color:#83cbeb;
+    
+}
+
+.Output h1, .Output h2, .Output h3 {
+    display: flex;
+    
+}
+
+.Output p {
+    color:#83cbeb;
+    display: flex;
+    margin: 0px 0px 20px 3px;
+}
+
+@keyframes output-color {  /* creates a changing/varying colour on the final result just ot make it stand out a bit more */
+    0% {color: #83cbeb;}
+    50% {color: #DBA29E;}
+    100% {color: #83cbeb;}
+}
+
+#output {
+    color: #83cbeb;
+    animation-name: output-color;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 100%;
+}
+
+
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.output-text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.center_output {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.Diabetes-Title {
+    color:#c1e5f5;
+    font-size: 70px;
+    font-family: 'Lato' , 'sans-serif';
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+
+    margin: 0px 0px 3rem 0px;
+    
+}
+
+.diabetes-square {
+    max-width:100%;
+    width: 100%;
+    height: 350px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    display: flex;
+    background-color: #83cbeb;
+    background-attachment: fixed;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-link {
+    display: flex;
+    justify-content: center;
+
+    color: #c0eeff;
+    font-size: 27px;
+    font-family: 'Lato' , 'sans-serif';
+    font-weight: bold;
+    text-decoration: none;
+    margin: -120px 0px 120px 0px;
+
+    transition: color 0.7s;
+}
+
+.home-link:hover {
+    color: #ffffff;  
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Lato' , 'sans-serif';
+    font-size: 20px;
+    border-color: #83cbeb;
+    color: #83cbeb;
+    border: 2px #83cbeb solid;
+    border-radius: 5px;
+
+    display: block;
+    margin: 25px auto;
+    
+}
+
+button:hover {
+    background-color: #83cbeb;
+    color:#c1e5f5;
+}
+
+/*Parkinsons and Chronic Kidney*/
+
+.maintitle-square {
+    width: 100%;
+    height: 350px;
+    background-color: #68bfe4;
+    position: absolute;
+    margin: -50px 0px 0px 0px;
+}
+
+.pred-title {
+    font-size: 120px;
+    margin: 105px 0px 25px 0px;
+    font-family: "Lato";
+    color: #c1e5f5;
+    text-align: center;
+    text-wrap: nowrap;
+    position: relative;
+
+}
+
+.pred-home {
+    font-family: "Lato";
+    font-size: 27px;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #c1e5f5;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    transition: color 0.7s;
+}
+
+.pred-home:hover {
+    color: #ffffff;
+}
+
+.form-pred {
+    width: 100%;
+    height: 150px;
+    background-color: #68bfe4;
+    margin: 400px 0px 0px 0px;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.label-pred {
+    color: #c0eeff;
+    /*position: relative;*/
+}
+
+select {
+    background-color: #c0eeff;
+    color: #50b4de;
+    font-family: lato;
+    font-weight: bold;
+    border: 0px #50b4de solid;
+    box-shadow: none;
+    display: flex;
+    flex: 0 50 0;
+    text-align: center;
+
+}
+
+#submitt {
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.pred-output {
+    position: absolute;
+}
+
+#ooutput {
+    color: #68bfe4;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    animation-name: output-color;  /*calling from previous @keyframes animation rather than calling a new one again*/
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+.pred-output {
+    color: #68bfe4;
+    font-family: Lato;
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+    margin: 620px 50px 0px 50px;
+}
+
+.pred-output_title {
+    color: #68bfe4;
+    font-family: Lato;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    margin: 10px 50px 0px 50px;
+}
+
+.pred-source {
+    color: #68bfe4;
+    font-family: Lato;
+    font-size: 40px;
+    position: realtive;
+    text-align: center;
+    margin: 60px 5px 0px 50px;
+}
+
+.output-div h3 {
+    color: #68bfe4;
+    font-family: Lato;
+    font-size: 20px;
+    position: relative;
+    margin: 60px 5px 0px 3px;
+}
