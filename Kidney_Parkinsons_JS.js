@@ -88,7 +88,7 @@ function parseCSV (csv) {
 var csvDatackd;
 var csvDatapark
 
-fetch('https://raw.githubusercontent.com/Biranavan-Sritharan/Disease-Prediction-Webpage/main/parkinsons_disease_data.csv')
+fetch('https://raw.githubusercontent.com/Biranavan-Sritharan/Biranavan-Sritharan.github.io/main/parkinsons_disease_data.csv')
   .then(response => {
     //mroe or less another catch, can be shortned down or removed to no effect but doesnt hurt
     if (!response.ok) {
@@ -101,7 +101,7 @@ fetch('https://raw.githubusercontent.com/Biranavan-Sritharan/Disease-Prediction-
   });
 
 //fetch retrieves csv file from github using url
-fetch('https://raw.githubusercontent.com/Biranavan-Sritharan/Disease-Prediction-Webpage/main/Chronic_Kidney_Dsease_data.csv')
+fetch('https://raw.githubusercontent.com/Biranavan-Sritharan/Biranavan-Sritharan.github.io/main/Chronic_Kidney_Dsease_data.csv')
   .then(response => {
     //mroe or less another catch, can be shortned down or removed to no effect but doesnt hurt
     if (!response.ok) {
