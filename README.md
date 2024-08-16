@@ -3,19 +3,19 @@
 ## Summary
 A disease prediction webpage using machine learning to calculate probabilities using Naive Bayes.
 
-PLEASE NOTE, using the online github repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side under the about section or [clicking here!](https://biranavan-sritharan.github.io/)
+PLEASE NOTE, using the online GitHub repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side under the about section or [clicking here!](https://biranavan-sritharan.github.io/)
 
 And also this reduces the risk of running into any potential errors when setting up the files in your own code editor (which there should not be any problems). Also please view the webpage at an 80% zoom level for best experience and to avoid any graphical issues*
 
 ## Requirements:
 
-An internet connection is required to run this webpage since the program fetches the datasets from the github repository directly and not locally!
+An internet connection is required to run this webpage since the program fetches the datasets from the GitHub repository directly and not locally!
 If you decide to view this in your code editor, please install a way to host a live server from your machine. 
 The one used in this project was the Live Server Extension on VSCode published by Ritwick Dey.
 You can also try manually hosting your server in the terminal if this does not work
 
 NOTE: the rest of this section is for setting up the discarded programs that are not part of the final project, more for looking at previous works and progress over time.
-Also if you are planning on running any of the unused files, note they will not be able to work due to not having any datasets attached to a github repository, however if you still wish to proceed with this, then there are a few libraries that will need to be installed for both Javascript and Python versions.
+Also if you are planning on running any of the unused files, note they will not be able to work due to not having any datasets attached to a GitHub repository, however if you still wish to proceed with this, then there are a few libraries that will need to be installed for both JavaScript and Python versions.
 
 ### For Python programs:
 
@@ -37,8 +37,8 @@ Now we can begin installing the python libraries required, which is just one, an
 pip install pandas
 ```
 
-### For javascript programs:
-This is much simpler, some javascript programs require the json2csv and csv2json packages and to install this type the following into the terminal in your code editor:
+### For JavaScript programs:
+This is much simpler, some JavaScript programs require the json2csv and csv2json packages and to install this type the following into the terminal in your code editor:
 
 ```console
 npm install csv2json
@@ -52,10 +52,7 @@ But please note that these venv set ups or npm package installations is for unus
 ## Using the website:
 Overall the website is very simple and easy to use and there should not be any difficulty to navigate through it.
 
-For optimal experience, zoom out to 80%. The main webpage (index.html) has 4 main sections (these can be navigated to with ease using the navigation bar at the top): Disease Predictor links, Guide, Github Redirect and Extra Information. The Guide contains basic information that is worth reading quickly, the github logo will re-direct you back to the repository, extra information will contain more information that may answer any questions you may have with the webpage and its use. And finally there is the disease predictor links, three in total: one for diabetes, another for chronic kidney disease and the last one for parkinsons. When you click on these links it will take you to another webpage, you can enter your information into the webpage into the labelled input boxes and once submit is clicked it will provide you with the probablity of this disease occuring. The final result will appear in a red/blue glow and then there will be a list of more values, each which shows the contributions to the the final probablity value, and you can see what might be the cause of such a high or low final output. To re-direct youself back to the homepage then click on the Home button beneath the title of the predictor.
+For optimal experience, zoom out to 80%. The main webpage (index.html) has 4 main sections (these can be navigated to with ease using the navigation bar at the top): Disease Predictor links, Guide, GitHub Redirect and Extra Information. The Guide contains basic information that is worth reading quickly, the GitHub logo will re-direct you back to the repository, extra information will contain more information that may answer any questions you may have with the webpage and its use. And finally there is the disease predictor links, three in total: one for diabetes, another for chronic kidney disease and the last one for Parkinson's. When you click on these links it will take you to another webpage, you can enter your information into the webpage into the labelled input boxes and once submit is clicked it will provide you with the probability of this disease occurring. The final result will appear in a red/blue glow and then there will be a list of more values, each which shows the contributions to the final probability value, and you can see what might be the cause of such a high or low final output. To re-direct yourself back to the homepage then click on the Home button beneath the title of the predictor.
 
 ## Ethical Concerns:
-Now please note that this predictor is not a replacement for a doctor and if you really are concerned then please consult a medical proffesional. This predictor is only as good as the datasets used which have been sourced from public domain sources. 
-
-
-
+Now please note that this predictor is not a replacement for a doctor and if you really are concerned then please consult a medical professional. This predictor is only as good as the datasets used which have been sourced from public domain sources. 
