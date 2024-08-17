@@ -157,94 +157,94 @@ fetch(url)
         j = dataArray[i].DiabetesPedigreeFunction; //var name j and NOT i
         
         //total no. of disease being present
-        if (b == "1") {
+        if (b == 1) {
           diseaseIsPresent += 1;
         }
 
         //no. disease NOT being present
-        if (b == "0") {
+        if (b == 0) {
           noDisease += 1;  //expand on this later
         }
 
         //no. age and disease being present
-        if (a == age && b == "1") {   //here "31" need to be changed to age var and then final output needs to be displayed on html page
+        if (a == age && b == 1) {   //here "31" need to be changed to age var and then final output needs to be displayed on html page
             diseaseAndAge += 1;
         }
 
         //no. of glucose and D being present
-        if (c == glucose && b == "1") {
+        if (c == glucose && b == 1) {
           diseaseAndGlucose += 1;
         }
 
         //no. preg and D is present
-        if (d == pregnancies && b == "1") {
+        if (d == pregnancies && b == 1) {
           diseaseAndPregnant += 1;
         }
 
         //no. bloodpressure and D is present
-        if (e == bloodPressure && b == "1") {
+        if (e == bloodPressure && b == 1) {
           diseaseAndBloodPressure += 1;
         }
 
         //no. skin thickness and D is present
-        if (f == SkinThickness && b == "1") {
+        if (f == SkinThickness && b == 1) {
           diseaseAndSkinThickness += 1;
         }
 
         //no. insulin and D is present
-        if (g == insulin && b == "1") {
+        if (g == insulin && b == 1) {
           diseaseAndInsulin += 1;
         }
 
         //no. bmi and D is present
-        if (h == bmi && b == "1") {
+        if (h == bmi && b == 1) {
           diseaseAndBMI += 1;
         }
 
         //no. pedigree and D is present
-        if (j == pedigree && b == "1") {
+        if (j == pedigree && b == 1) {
           diseaseAndPedigree += 1;
         }
 
         /* DISEASE NOT PRESENT AND OTHER VARIABLE */
 
         //no. age and disease not being present
-        if (a == age && b == "0") {   //here "31" need to be changed to age var and then final output needs to be displayed on html page
+        if (a == age && b == 0) {   //here "31" need to be changed to age var and then final output needs to be displayed on html page
           NOdiseaseAndAge += 1;
         }
 
         //no. of glucose and D not being present
-        if (c == glucose && b == "0") {
+        if (c == glucose && b == 0) {
           NOdiseaseAndGlucose += 1;
         }
 
         //no. preg and D is not present
-        if (d == pregnancies && b == "0") {
+        if (d == pregnancies && b == 0) {
           NOdiseaseAndPregnant += 1;
         }
 
         //no. bloodpressure and D is not present
-        if (e == bloodPressure && b == "0") {
+        if (e == bloodPressure && b == 0) {
           NOdiseaseAndBloodPressure += 1;
         }
 
         //no. skin thickness and D is not present
-        if (f == SkinThickness && b == "0") {
+        if (f == SkinThickness && b == 0) {
           NOdiseaseAndSkinThickness += 1;
         }
 
         //no. insulin and D is not present
-        if (g == insulin && b == "0") {
+        if (g == insulin && b == 0) {
           NOdiseaseAndInsulin += 1;
         }
 
         //no. bmi and D is not present
-        if (h == bmi && b == "0") {
+        if (h == bmi && b == 0) {
           NOdiseaseAndBMI += 1;
         }
 
         //no. pedigree and D is not present
-        if (j == pedigree && b == "0") {
+        if (j == pedigree && b == 0) {
           NOdiseaseAndPedigree += 1;
         }
 
