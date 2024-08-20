@@ -17,7 +17,7 @@ If you decide to view this in your code editor, please install a way to host a l
 The one used in this project was the Live Server Extension on VSCode published by Ritwick Dey.
 You can also try manually hosting your server in the terminal if this does not work
 
-NOTE: the rest of this section is for setting up the discarded programs that are not part of the final project, more for looking at previous works and progress over time.
+NOTE: The rest of this section is for setting up the discarded programs that are not part of the final project, more for looking at previous works and progress over time.
 Also if you are planning on running any of the unused files, note they will not be able to work due to not having any datasets attached to a GitHub repository, however if you still wish to proceed with this, then there are a few libraries that will need to be installed for both JavaScript and Python versions.
 
 ### For Python programs:
