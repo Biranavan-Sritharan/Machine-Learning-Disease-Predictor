@@ -1,7 +1,7 @@
 # Disease Prediction Webpage
 
 ## Summary
-A disease prediction webpage using machine learning to calculate probabilities using Naive Bayes.
+A disease prediction webpage using machine learning and data mining to calculate probabilities using Naive Bayes.
 
 PLEASE NOTE, using the online GitHub repository rather than the zip file will give the most up to date version in which the webpage is being hosted using GitHub Pages and can be accessed by the link on the right hand side under the about section or [clicking here!](https://biranavan-sritharan.github.io/)
 
